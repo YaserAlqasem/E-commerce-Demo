@@ -1,12 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.module.css';
+import Layout from './hoc/Layout/Layout';
+
 
 function App() {
   return (
-    <div >
-
-    </div>
+    <Layout />
   );
 }
 
