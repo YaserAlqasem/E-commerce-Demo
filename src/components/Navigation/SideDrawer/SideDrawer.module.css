@@ -1,0 +1,58 @@
+.SideDrawer {
+    position: fixed;
+    width: 280px;
+    max-width: 60%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    background-color: darkslategrey;
+    padding: 32px 16px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+    display: block;
+}
+
+.NavigationItems {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    height: 100%;
+}
+.NavigationItem {
+    margin: 10px 0;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    padding-top: 2px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    color: white !important;
+}
+.NavigationItem:hover,
+.NavigationItem:active,
+.NavigationItem.active {
+    color: #40A4C8;
+}
+@media (min-width: 1025px) {
+    .SideDrawer {
+        display: none;
+    }
+}
+
+.Open {
+    transform: translateX(0);
+}
+
+.Close {
+    transform: translateX(-100%);
+}
+
+.Logo {
+    height: 11%;
+    margin-bottom: 32px;
+}

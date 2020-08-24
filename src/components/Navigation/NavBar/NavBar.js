@@ -1,11 +1,13 @@
 import React from 'react';
 
 import classes from './NavBar.module.css';
+import Drawertoggle from '../SideDrawer/DrawerToggle/DrawerToggle';
 
-const navbar = () => {
+const navbar = (props) => {
     return (
-        <header>
-            <nav>
+        <header className={classes.header}>
+            <Drawertoggle clicked={props.drawerToggleClicked} />
+            <nav className={classes.DesktopOnly}>
                 <div className="ui secondary pointing menu">
                     <div className={classes.Logo}>
 

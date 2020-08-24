@@ -3,3 +3,43 @@
     padding-top: 10px;
     padding-left: 10px;
 }
+
+@media (max-width: 320px) {
+    .DesktopOnly {
+        display: none;
+    }
+    .header{
+        background-color: black;
+        width: 100%;
+    }
+}
+
+@media (max-width: 481px) {
+    .DesktopOnly {
+        display: none;
+    }
+    .header{
+        background-color: black;
+        width: 100%;
+    }
+}
+
+@media (max-width: 769px) {
+    .DesktopOnly {
+        display: none;
+    }
+    .header{
+        background-color: black;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1025px) {
+    .DesktopOnly {
+        display: none;
+    }
+    .header{
+        background-color: black;
+        width: 100%;
+    }
+}
