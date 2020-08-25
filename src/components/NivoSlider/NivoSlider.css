@@ -1,0 +1,82 @@
+.slick-dots{
+    bottom: 30px;
+}
+.slick-dots li.slick-active button:before, .slick-dots li button:before {
+    color:black;
+    font-size: 16px;
+}
+
+@media (max-width: 499px) {
+  .arrowvisilbilty {
+      display: none !important;
+  }
+
+  .slick-dots{
+    position: relative !important;
+  }
+  
+  .slick-dots li.slick-active button:before, .slick-dots li button:before {
+    color:black;
+    font-size: 13px;
+  }
+}
+  
+@media (max-width: 320px) {
+  .arrowvisilbilty {
+      display: none !important;
+  }
+  
+  .slick-dots{
+    position: relative !important;
+  }
+  
+  .slick-dots li.slick-active button:before, .slick-dots li button:before {
+    color:black;
+    font-size: 13px;
+  }
+}
+  
+@media (max-width: 481px) {
+    .arrowvisilbilty {
+      display: none !important;
+    }
+      
+    .slick-dots{
+      position: relative !important;
+    }
+  
+    .slick-dots li.slick-active button:before, .slick-dots li button:before {
+      color:black;
+      font-size: 13px;
+    }
+  }
+
+@media (max-width: 769px) {
+    .arrowvisilbilty {
+        display: none !important;
+    }
+  
+    .slick-dots{
+      position: relative !important;
+    }
+    
+    .slick-dots li.slick-active button:before, .slick-dots li button:before {
+      color:black;
+      font-size: 13px;
+    }
+}
+  
+@media (max-width: 1025px) {
+    .arrowvisilbilty {
+      display: none !important;
+    }
+
+    .slick-dots{
+      position: relative !important;
+    }
+    
+    .slick-dots li.slick-active button:before, .slick-dots li button:before {
+      color:black;
+      font-size: 13px;
+    }
+}
