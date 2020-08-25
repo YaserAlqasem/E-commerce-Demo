@@ -1,7 +1,9 @@
 import React, { Component, Fragment } from 'react';
+import classes from './Layout.module.css';
 
 import Navbar from '../../components/Navigation/NavBar/NavBar';
 import Sidedrawer from '../../components/Navigation/SideDrawer/SideDrawer';
+import Footer from '../../components/Footer/Footer'
 
 class Layout extends Component {
     state = {
@@ -24,6 +26,11 @@ class Layout extends Component {
                 <Sidedrawer
                     open={this.state.showSideDrawer}
                     closed={this.sideDrawerClosedHandler} />
+                    
+                    <main className={classes.Content}>
+                    {this.props.children}
+                </main> 
+                <Footer />
             </Fragment>
         )
     }

@@ -1,11 +1,27 @@
 import React from 'react';
-import './App.module.css';
+import classes from './App.module.css';
 import Layout from './hoc/Layout/Layout';
 
+import NivoSlider from '../src/components/NivoSlider/NivoSlider'
+import { Route, Switch, Redirect } from 'react-router-dom';
+
+
+const homePage = 
+ ( <div className={classes.content}>
+        <NivoSlider />
+      </div>);
 
 function App() {
+  let routes = (
+    <Switch>
+      <Route path="/" exact render={() => homePage} />
+      <Redirect to="/" />
+    </Switch>
+  );
   return (
-    <Layout />
+    <Layout>
+      {routes}
+    </Layout>
   );
 }
 
