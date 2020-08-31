@@ -11,115 +11,35 @@
     font-size: 35px;
   }
   
-  .products_wrapper {
+ .products_wrapper {
       height: 350px;
       width: 84%;
       margin: 0px auto;
       overflow: hidden;
       padding: 10px 0px 20px 0px;
-    }
+  }
   
-    .product {
-      height: 310px;
-      width: 90% !important;
-      margin: 0px 10px;
-      background: white;
-      border-radius: 5px;
-      outline: none;
-      /* box-shadow: 1rem 1rem 1rem -1rem; */
-    }
-    
-    .product:hover .slider_image {
-      box-shadow: 0 25px 35px -5px rgba(0,0,0,.1)
-    }
-   
-    .slider_image {
-      position: relative;
-      display: block;
-      height: 200px;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-      border: 0;
-      background-color: rgb(238, 236, 236);
-      margin-bottom: 10px;
-    }
-    
-    .slider_image img{
-        position: absolute;
-        display: block;
-        padding: 5px;
-        width: 100%;
-        height: auto;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-    
-    .product_info {
-      height: 130px;
-      text-align: center;
-      margin-top: 20px;
-    }
-    
-    .product:hover .product_info {
-      box-shadow: 0 25px 35px -5px rgba(0,0,0,.1)
-    }
-  
-    .product_info a{ 
-      text-decoration: none !important;
-      font-family: 'Open Sans' !important;
-      font-size: 18px;
-      letter-spacing: -0.15px;
-      color: black;
-      font-weight: 400;
-    }
-    
-    .product_info a:hover{
-      color: darkcyan;
-    }
-    
-    .product_info button{ 
-      border: .1;
-      border-color: white;
-      background-color: white;
-    }
-    
-    .product_info button span{ 
-      font-family: 'Poppins';
-      font-size: 12px;
-      font-weight: 600;
-    }
-    
-    .product:hover .product_info button{  
-      border: 1;
-      background-color:#4db7b3;
-    }
-    
-    .product:hover .product_info button span{  
-      color: white;
-    }
-    
-    @media (max-width: 320px) {
-      .arrowvisilbilty {
+ @media (max-width: 320px) {
+     .arrowvisilbilty {
           display: none;
       }
   }
   
-  @media (max-width: 481px) {
+@media (max-width: 481px) {
     .arrowvisilbilty {
         display: none;
     }
-  }
+ }
   
   
-  @media (max-width: 769px) {
-    .arrowvisilbilty {
+@media (max-width: 769px) {
+   .arrowvisilbilty {
         display: none;
-    }
-  }
+   }
+ }
   
-  @media (max-width: 1025px) {
-    .arrowvisilbilty {
+@media (max-width: 1025px) {
+   .arrowvisilbilty {
         display: none;
-    }
-  }
+   }
+ }
