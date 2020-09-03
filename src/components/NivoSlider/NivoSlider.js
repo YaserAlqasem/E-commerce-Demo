@@ -86,10 +86,10 @@ class NivoSlider extends Component {
                     <NextArrow nextSlide={this.next} />
                 </span>
 
-                <Slider className="nivoSlider" ref={s => (this.slider = s)} {...settings}>
+                <Slider ref={s => (this.slider = s)} {...settings}>
                     {this.state.Images.map(image => {
                         console.log(image);
-                        return (<div key={image.indexOf()}><img style={{ width: "100%" }} key={image} src={image} /></div>)
+                        return (<div className="imageslider" key={image.indexOf()}><img style={{ width: "100%" }} key={image} src={image} /></div>)
                     })}
                 </Slider>
             </Fragment>

@@ -1,0 +1,112 @@
+.badge {
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    padding: 3px 7px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  .shopping_cart {
+    /* margin: 20px 0; */
+    float: right;
+    right: 5px;
+    top: 60px;
+    background: white;
+    width: 300px;
+    position: absolute;
+    border-radius: 3px;
+    padding: 20px;
+    z-index: 2;
+  }
+
+  .close{
+    display: none;
+  }
+
+  .open{
+    display: block;
+  }
+
+  .shopping_cart .shopping_cart_header {
+    border-bottom: 1px solid #1e99c6;
+    padding-bottom: 15px;
+  }
+  .shopping_cart .shopping_cart_header .shopping_cart_total {
+    float: right;
+    font-weight: bold;
+    color: red;
+    font-size: 18px;
+  }
+  .shopping_cart .shopping_cart_items {
+    padding-top: 10px;
+    padding-left: 0;
+    list-style-type: none;
+  }
+  .shopping_cart .shopping_cart_items li {
+    margin-bottom: 18px;
+  }
+  .shopping_cart .shopping_cart_items img {
+    float: left;
+    margin-right: 12px;
+  }
+  .shopping_cart .shopping_cart_items .item_name {
+    display: block;
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .shopping_cart .shopping_cart_items .item_price {
+    color: #1e99c6;
+    margin-right: 8px;
+    font-weight: bold;
+  }
+  .shopping_cart .shopping_cart_items .item_quantity {
+    color: black;
+    font-size: 15px;
+  }
+  
+  .shopping_cart:after {
+    bottom: 100%;
+    left: 89%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: white;
+    border-width: 8px;
+    margin-left: -8px;
+  }
+  
+  .cart-icon {
+    color: #515783;
+    font-size: 24px;
+    margin-right: 7px;
+    float: left;
+  }
+  
+  .viewcart {
+    background: #1e99c6;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    border-radius: 3px;
+    font-size: 16px;
+    margin: 25px 0 15px 0;
+    cursor: pointer;
+  }
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  

@@ -1,4 +1,9 @@
-.DrawerToggle {
+.mobilenav {
+    display: inline-flex;
+    align-items: center;
+}
+
+.drawertoggle {
     width: 40px;
     height: 100%;
     font-size: 30px;
@@ -13,7 +18,31 @@
 }
 
 @media (min-width: 1025px) {
-    .DrawerToggle {
+    .mobilenav {
         display: none;
     }
 }
+
+.shoppingcart {
+    position: absolute;
+    right: 15px;
+}
+
+.badge {
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    padding: 3px 7px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  .shoppingcartboxtoogle {
+    color: #007bff;
+    cursor: pointer;
+  }
+  

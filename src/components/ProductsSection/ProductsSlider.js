@@ -39,7 +39,6 @@ class ProductsSlider extends Component {
     }
     
     state = {
-        slidestoshow: [1,4],
         products: [
           {
             image: sliderimage1
@@ -121,7 +120,6 @@ class ProductsSlider extends Component {
                         
                     
                     {this.state.products.map(product => {
-                        console.log(product);
                         return(<ProductCard key={product} product={product}/>)
                     })} 
 

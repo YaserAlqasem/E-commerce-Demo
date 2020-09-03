@@ -3,11 +3,13 @@ import classes from './Layout.module.css';
 
 import Navbar from '../../components/Navigation/NavBar/NavBar';
 import Sidedrawer from '../../components/Navigation/SideDrawer/SideDrawer';
-import Footer from '../../components/Footer/Footer'
+import Shoppingcartbox from '../../components/ShoppingCart/ShoppingCartBox';
+import Footer from '../../components/Footer/Footer';
 
 class Layout extends Component {
     state = {
-        showSideDrawer: false
+        showSideDrawer: false,
+        showShoppingCart: false
     }
 
     sideDrawerClosedHandler = () => {
@@ -19,17 +21,35 @@ class Layout extends Component {
             return { showSideDrawer: !prevState.showSideDrawer };
         });
     }
+
+    shoppingCartClosedHandler = () => {
+        this.setState({ showShoppingCart: false });
+    }
+
+    shoppingCartToggleHandler = () => {
+        this.setState((prevState) => {
+            return { showShoppingCart: !prevState.showShoppingCart };
+        });
+    }
+
     render() {
         return (
             <Fragment>
-                <Navbar drawerToggleClicked={this.sideDrawerToggleHandler} />
+                <Navbar drawerToggleClicked={this.sideDrawerToggleHandler}
+                cartToggleClicked={this.shoppingCartToggleHandler} />
+
                 <Sidedrawer
                     open={this.state.showSideDrawer}
                     closed={this.sideDrawerClosedHandler} />
-                    
+
+                <Shoppingcartbox
+                    open={this.state.showShoppingCart}
+                    closed={this.shoppingCartClosedHandler} />
+
                     <main className={classes.Content}>
                     {this.props.children}
                 </main> 
+
                 <Footer />
             </Fragment>
         )

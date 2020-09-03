@@ -6,6 +6,10 @@
     font-size: 16px;
 }
 
+.imageslider:focus {
+  outline: none;
+}
+
 @media (max-width: 499px) {
   .arrowvisilbilty {
       display: none !important;
